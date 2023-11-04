@@ -267,32 +267,82 @@ function startGame() {
         clearInterval(changeMove);
         if ((parseInt(localStorage.getItem("snakeEasy")) < score || !localStorage.getItem("snakeEasy")) && level == "easy") {
             localStorage.setItem("snakeEasy", score)
-            alert("Game over!!\n\n congrats\n You did new high score :) ");
             ii++;
+            Swal.fire({
+                title: 'Game Over!',
+                text: 'You set a new High Score!',
+                confirmButtonText: 'Reload',
+                color:'#f1f1f1',
+                background: '#272727'
+            }).then(function (result) {
+                if (result.isConfirmed) {
+                    window.location.reload()
+                }
+            })
         }
         if ((parseInt(localStorage.getItem("snakeMedium")) < score || !localStorage.getItem("snakeMedium")) && level == "medium") {
             localStorage.setItem("snakeMedium", score)
             ii++;
-            alert("Game over!!\n\n congrats\n You did new high score :) ");
+            Swal.fire({
+                title: 'Game Over!',
+                text: 'You set a new High Score!',
+                confirmButtonText: 'Reload',
+                color:'#f1f1f1',
+                background: '#272727'
+            }).then(function (result) {
+                if (result.isConfirmed) {
+                    window.location.reload()
+                }
+            })
 
         }
         if ((parseInt(localStorage.getItem("snakeHard")) < score || !localStorage.getItem("snakeHard")) && level == "hard") {
             localStorage.setItem("snakeHard", score)
             ii++;
-            alert("Game over!!\n\n congrats\n You did new high score :) ");
+            Swal.fire({
+                title: 'Game Over!',
+                text: 'You set a new High Score!',
+                confirmButtonText: 'Reload',
+                color:'#f1f1f1',
+                background: '#272727'
+            }).then(function (result) {
+                if (result.isConfirmed) {
+                    window.location.reload()
+                }
+            })
 
         }
         if ((parseInt(localStorage.getItem("snakeVHard")) < score || !localStorage.getItem("snakeVHard")) && level == "vhard") {
             localStorage.setItem("snakeVHard", score)
             ii++;
-            alert("Game Over!!\n\n Congrats\n You did new high score :) ");
+            Swal.fire({
+                title: 'Game Over!',
+                text: 'You set a new High Score!',
+                confirmButtonText: 'Reload',
+                color:'#f1f1f1',
+                background: '#272727'
+            }).then(function (result) {
+                if (result.isConfirmed) {
+                    window.location.reload()
+                }
+            })
         }
 
         if (ii == 0){
-            alert("Game over !!\n\n This is not easy as you imagine :( ")
+            Swal.fire({
+                title: 'Game Over!',
+                text: 'You set a new High Score!',
+                confirmButtonText: 'Reload',
+                color:'#f1f1f1',
+                background: '#272727'
+            }).then(function (result) {
+                if (result.isConfirmed) {
+                    window.location.reload()
+                }
+            })
         }
         
-        window.location.reload()
+        
     }
 
 
