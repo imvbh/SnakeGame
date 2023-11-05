@@ -25,6 +25,10 @@ body,
   background: var(--body-color);
 
 }
+
+.title img {
+  height: 3rem
+}
 .body {
   width: 100vw;
   min-height: 100vh;
@@ -177,7 +181,7 @@ tr > td {
 .box::before {
   content: '';
   position: absolute;
-  width: 4vw;
+  width: 8rem;
   background-image: linear-gradient(180deg, rgb(3, 150, 3), rgb(255, 48, 255));
   height: 200%;
   animation: rotBGimg 6s linear infinite;
