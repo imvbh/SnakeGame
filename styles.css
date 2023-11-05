@@ -89,7 +89,7 @@ tr > td {
 .active,
 .last {
   border-radius: 2px;
-  background: green !important;
+  background: rgb(0, 128, 0) !important;
   border: 2px solid rgb(11, 194, 5) !important;
 }
 
@@ -165,10 +165,60 @@ tr > td {
   border-radius: 14px;
 }
 
+.box {
+
+
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+
+
+.box::before {
+  content: '';
+  position: absolute;
+  width: 4vw;
+  background-image: linear-gradient(180deg, rgb(3, 150, 3), rgb(255, 48, 255));
+  height: 200%;
+  animation: rotBGimg 6s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}  
+
+.content {
+  z-index: 1;
+  margin: 0 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .credits {
   color: var(--text-color);
   margin-top: 2rem;
   font-size: 0.75rem;
+  padding: auto 0;
 }
 
 .credits a {
