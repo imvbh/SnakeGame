@@ -294,6 +294,10 @@ tr > td {
 }
 
 
+.d:last-of-type {
+  margin-bottom: 0.5rem;
+}
+
 .arrowBtns {
   color: var(--text-color);
   height: 5.5rem;
