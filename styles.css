@@ -195,7 +195,7 @@ tr > td {
   font-weight: 800;
   margin-right: 1rem;
   margin-top: 1rem;
-  transition: all 0.2s;
+  transition: all 0.7s;
 }
 .box input:hover {
   color: white;
