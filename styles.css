@@ -22,12 +22,8 @@ body,
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background: var(--body-color); */
-  background-color: #0f0f0f;
-  opacity: 1;
-  background-image: radial-gradient(#754ef9 1px, #0f0f0f 1px);
-  background-size: 20px 20px;
-  position: relative;
+  background: var(--body-color);
+
 }
 .body {
   width: 100vw;
