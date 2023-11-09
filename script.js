@@ -229,26 +229,54 @@ function startGame() {
   }, snakeSpeed);
 
   //movement
+  const checkwall= document.querySelector('#walls:checked') !== null;// Default setting
+  let allowWallCollision = !checkwall;
+  // Movement functions
   function up(row) {
     snake[snake.length - 1][0] = row;
-    snake.push([snake[snake.length - 1][0] - 1, snake[snake.length - 1][1]]);
+    if (allowWallCollision) {
+      const newRow = (row - 1 + numOfRow) % numOfRow;
+      snake.push([newRow, snake[snake.length - 1][1]]);
+    } else {
+      snake.push([snake[snake.length - 1][0] - 1, snake[snake.length - 1][1]]);
+    }
     snake.shift();
   }
+
   function down(row) {
     snake[snake.length - 1][0] = row;
-    snake.push([snake[snake.length - 1][0] + 1, snake[snake.length - 1][1]]);
+    if (allowWallCollision) {
+      const newRow = (row + 1) % numOfRow;
+      snake.push([newRow, snake[snake.length - 1][1]]);
+    } else {
+      snake.push([snake[snake.length - 1][0] + 1, snake[snake.length - 1][1]]);
+    }
     snake.shift();
   }
+
   function right(col) {
     snake[snake.length - 1][1] = col;
-    snake.push([snake[snake.length - 1][0], snake[snake.length - 1][1] + 1]);
+    if (allowWallCollision) {
+      const newCol = (col + 1) % numOfRow;
+      snake.push([snake[snake.length - 1][0], newCol]);
+    } else {
+      snake.push([snake[snake.length - 1][0], snake[snake.length - 1][1] + 1]);
+    }
     snake.shift();
   }
+
   function left(col) {
     snake[snake.length - 1][1] = col;
-    snake.push([snake[snake.length - 1][0], snake[snake.length - 1][1] - 1]);
+    if (allowWallCollision) {
+      const newCol = (col - 1 + numOfRow) % numOfRow;
+      snake.push([snake[snake.length - 1][0], newCol]);
+    } else {
+      snake.push([snake[snake.length - 1][0], snake[snake.length - 1][1] - 1]);
+    }
     snake.shift();
   }
+
+
 
   food();
 

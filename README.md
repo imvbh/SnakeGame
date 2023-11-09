@@ -1,6 +1,6 @@
 # A Simple Snake Game
 
-This is a classic snake game with different difficulty levels where you control a snake to collect food and grow while avoiding collisions with the game boundaries and yourself. The game is built using HTML, CSS, JavaScript and [SweetAlert2](https://sweetalert2.github.io/) library.
+This is a classic snake game with different difficulty levels where you control a snake to collect food and grow while avoiding or NOT avoiding collisions with the game boundaries and yourself. The game is built using HTML, CSS, JavaScript and [SweetAlert2](https://sweetalert2.github.io/) library.
 
 
 ## Logic Overview
@@ -14,6 +14,8 @@ This is a classic snake game with different difficulty levels where you control 
 - Different difficulty levels determine the snake's speed, the score required to level up, and the high score storage.
 
 - For mobile users, on-screen buttons are provided to control the snake's direction.
+
+- Added a toggle mechanism for wall collisions.
 
 - The game provides feedback when a high score is achieved, encouraging players to improve their performance.
 
