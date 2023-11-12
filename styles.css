@@ -182,9 +182,9 @@ tr > td {
   content: '';
   position: absolute;
   width: 8rem;
-  background-image: linear-gradient(180deg, rgb(3, 150, 3), rgb(255, 48, 255));
+  background-image: linear-gradient(180deg, rgb(12, 193, 12), rgb(203, 2, 2));
   height: 200%;
-  animation: rotBGimg 6s linear infinite;
+  animation: rotBGimg 5s linear infinite;
   transition: all 0.2s linear;
 }
 

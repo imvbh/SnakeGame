@@ -307,6 +307,7 @@ function startGame() {
         confirmButtonText: "Reload",
         color: "#f1f1f1",
         background: "#272727",
+        allowOutsideClick: false,
       }).then(function (result) {
         if (result.isConfirmed) {
           window.location.reload();
@@ -326,6 +327,7 @@ function startGame() {
         confirmButtonText: "Reload",
         color: "#f1f1f1",
         background: "#272727",
+        allowOutsideClick: false,
       }).then(function (result) {
         if (result.isConfirmed) {
           window.location.reload();
@@ -345,6 +347,7 @@ function startGame() {
         confirmButtonText: "Reload",
         color: "#f1f1f1",
         background: "#272727",
+        allowOutsideClick: false,
       }).then(function (result) {
         if (result.isConfirmed) {
           window.location.reload();
@@ -364,6 +367,7 @@ function startGame() {
         confirmButtonText: "Reload",
         color: "#f1f1f1",
         background: "#272727",
+        allowOutsideClick: false,
       }).then(function (result) {
         if (result.isConfirmed) {
           window.location.reload();
