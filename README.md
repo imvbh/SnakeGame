@@ -1,5 +1,7 @@
 # A Simple Snake Game
 
+View here: https://imvbh.github.io/SnakeGame/
+
 This is a classic snake game with different difficulty levels where you control a snake to collect food and grow while avoiding or NOT avoiding collisions with the game boundaries and yourself. The game is built using HTML, CSS, JavaScript and [SweetAlert2](https://sweetalert2.github.io/) library.
 
 
